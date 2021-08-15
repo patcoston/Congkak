@@ -103,7 +103,6 @@ function doMove(board, hole, choices, history) {
   }
 }
 
-// for (let move = 1; move <= holes; move++) {
-//   doMove([...board], move, [move], history)
-// }
-doMove([...board], 3, [3], history)
+for (let move = 1; move <= holes; move++) {
+  doMove([...board], move, [move], history)
+}
